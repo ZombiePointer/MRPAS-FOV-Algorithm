@@ -7,6 +7,10 @@ A straightforward, 2D implementation of [Mingos' Restrictive Precise Angle Shado
 1. Include the header file **FieldOfView.h**.
 2. Create a `Map` object with width and height parameters corresponding to your terrain map dimensions, and fill the cells with the `walkable` (can the player walk through this tile?) and `transparent` (can the player see through this tile?) values of your terrain map.
 3. Create a `FieldOfView` object and call the `computeFOV` method with your desired parameters.
+    - `playerX`: The player's x-coordinate.
+    - `playerY`: The player's y-coordinate.
+    - `maxRadius`: The maximum FOV radius. Lower values result in lower vision.
+    - `lightWalls`: Are obstacles lit? (`false` makes obstacles dark.)
 4. The resulting `Map` cells will contain `fov` values corresponding to whether they are visible in the player's FOV cone.
 
 ## MRPAS License
