@@ -1,7 +1,7 @@
 # MRPAS-FOV-Algorithm
 
 ## What is this?
-A straightforward, 2D implementation of Mingos' Restrictive Precise Angle Shadowcasting (MRPAS), a common roguelike Field of View (FOV) algorithm, in C++. Lightweight, headers-only, drag-and-drop into your project. Based on MRPAS code written by Dominik Marczuk and posted on Umbrarum Regnum. (https://groups.google.com/g/rec.games.roguelike.development/c/rYm7HDIollM)
+A straightforward, 2D implementation of [Mingos' Restrictive Precise Angle Shadowcasting (MRPAS)](https://openbase.com/js/mrpas/documentation), a common roguelike Field of View (FOV) algorithm, in C++. An FOV computation algorithm, given a 2D grid with a set of source coordinates and points marked as obstacles, will determine all of the points visible from those coordinates. This implementation is lightweight, headers-only, and can be easily dragged-and-dropped into your project. Based on MRPAS code written by Dominik Marczuk and posted on Umbrarum Regnum. (https://groups.google.com/g/rec.games.roguelike.development/c/rYm7HDIollM)
 
 ## How do I use this?
 1. Include the header file **FieldOfView.h**.
