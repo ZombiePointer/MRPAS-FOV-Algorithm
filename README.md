@@ -3,6 +3,8 @@
 ## What is this?
 A straightforward, 2D implementation of [Mingos' Restrictive Precise Angle Shadowcasting (MRPAS)](https://openbase.com/js/mrpas/documentation), a common roguelike Field of View (FOV) algorithm, in C++. A FOV computation algorithm, given a 2D grid with a set of source coordinates and points marked as view-blocking obstacles, will determine all of the points visible from those coordinates. This implementation is lightweight, headers-only, and can be easily dragged-and-dropped into your project. Based on MRPAS code written by [Dominik "Mingos" Marczuk](http://www.roguebasin.com/index.php/User:Dominikmarczuk) and posted on the website of the unreleased roguelike game [Umbrarum Regnum](http://www.roguebasin.com/index.php/Umbrarum_Regnum) in April of 2009. ([Source Post](https://groups.google.com/g/rec.games.roguelike.development/c/rYm7HDIollM))
 
+MRPAS was originally written with performance in mind, and is very efficient. It processes as few points as possible, quickly discarding the ones obviously out of FOV, and tends to match or outperform all popular FOV algorithms.
+
 ## How do I use this?
 1. Include the header file **FieldOfView.h**.
 2. Create a `Map` object with width and height parameters corresponding to your terrain map dimensions, and fill the cells with the `walkable` (can the player walk through this tile?) and `transparent` (can the player see through this tile?) values of your terrain map.
@@ -15,6 +17,7 @@ A straightforward, 2D implementation of [Mingos' Restrictive Precise Angle Shado
 
 ## Read more
 - [MRPAS documentation on Openbase](https://openbase.com/js/mrpas/documentation).
+- [Restrictive Precise Angle Shadowcasting on Roguebasin](http://www.roguebasin.com/index.php/Restrictive_Precise_Angle_Shadowcasting)
 
 ## MRPAS License
 
